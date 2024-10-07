@@ -21,5 +21,5 @@ export async function GET(req: NextRequest) {
     console.log("No code found in the query parameters");
   }
 
-  return NextResponse.redirect(new URL("/", req.url));
+  return NextResponse.redirect(new URL("/account?login=true", req.url));
 }

@@ -27,7 +27,7 @@ export default function Login({
     console.log("Signin response", data)
    // Delay to ensure the session is properly set
     await new Promise((resolve) => setTimeout(resolve, 1000));
-    return redirect("/");
+    return redirect("/account?login=true");
   };
 
   const signUp = async (formData: FormData) => {

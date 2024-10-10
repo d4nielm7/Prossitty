@@ -107,7 +107,6 @@ export default async function Dashboard({
                     categoryName={place.categories?.name}
                   />
                 );
-
               })}
             </div>
           </Card>

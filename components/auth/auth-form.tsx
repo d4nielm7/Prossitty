@@ -93,7 +93,7 @@ export default function AuthForm() {
       variant: "success",
     });
 
-    return window.location.replace('/account')
+    return window.location.replace('/')
   }
 
   return (

@@ -29,6 +29,10 @@ export default function Locator({
     getUsers();
   }, [session]);
 
+
+  console.log(process.env.NEXT_PUBLIC_MAPS_API_KEY);
+
+
   if (!closestUsers)
     return (
       <div className="flex flex-row items-center justify-center">
@@ -40,7 +44,7 @@ export default function Locator({
   return (
     <APIProvider apiKey={process.env.NEXT_PUBLIC_MAPS_API_KEY as string}>
       <Map
-        zoom={7}
+        zoom={11}
         center={{
           lat: userData?.location?.coordinates[1] as number,
           lng: userData?.location?.coordinates[0] as number,

@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "export": "next export",
     "start": "next start",
     "lint": "next lint --fix",
     "types": "pnpm dlx supabase gen types typescript --project-id oxjetfqsuizadrpjvpan --schema public > types_db.ts"

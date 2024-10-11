@@ -119,16 +119,7 @@ export default async function Homepage() {
     </div>
 
     {/* Stats Section */}
-    <div className="grid w-full grid-cols-1 lg:grid-cols-3 items-center justify-center gap-12">
-      {/* Users Stat */}
-      <div className="flex flex-col items-center space-y-2 hover:scale-105 transition-transform duration-300 ease-in-out">
-        <h3 className="text-4xl md:text-5xl font-extrabold text-[#7ed957] relative">
-          {stats ? stats![0].profiles_count : "0"}
-          <span className="block w-2/3 h-1 bg-[#7ed957] mt-2 mx-auto"></span>
-        </h3>
-        <p className="text-gray-600 md:text-lg">Users</p>
-      </div>
-      
+    <div className="grid w-full grid-cols-1 lg:grid-cols-2 items-center justify-center gap-12">
       {/* Recommendations Stat */}
       <div className="flex flex-col items-center space-y-2 hover:scale-105 transition-transform duration-300 ease-in-out">
         <h3 className="text-4xl md:text-5xl font-extrabold text-[#7ed957] relative">

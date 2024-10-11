@@ -13,6 +13,8 @@ const nextConfig = {
     images: {
         unoptimized: true,                  // GitHub Pages doesn't support image optimization
     },
+    output: 'standalone',  // This is important for Vercel to handle dynamic routes
+
 };
 
 module.exports = nextConfig;
